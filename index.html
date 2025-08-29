@@ -1,49 +1,398 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Welcome to our page">
-    <title>Adidas</title>
-    <link rel="stylesheet" href="master.css">
-    <link rel="shortcut icon" type="image/jpg" href="ad.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adidas NEMEZIZ 19.1 - Flexible cleats for agile play on firm ground. Experience the ultimate in football performance.">
+    <meta name="keywords" content="Adidas, NEMEZIZ, football cleats, soccer shoes, sports equipment">
+    <meta name="author" content="Karim Helal">
+    <title>Adidas NEMEZIZ 19.1 - Ultimate Football Performance</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/ad.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-</body>
-<div class="container">
-    <div class="navbar">
-        <img src="ad.png" class="logo">
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Collections</a></li>
-                <li><a href="">Contact us</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <h1 class="ad">Adidas</h1>
-        <div class="nem">
-            <h1>NEMEZIZ<sub id="nu">19.1</sub></h1>
-        </div>
-    </div>
-    <div class="text">
-        <p>FLEXIBLE ADIDAS CLEATS FOR AGILE <br> PLAY ON FIRM GROUND.</p>
-    </div>
-    <div>
-        <button class="btn">
-            Buy Now
-        </button>
-    </div>
-    <div class="social">
-        <a href="https://www.facebook.com/adidasfootball/" target="_blank"><img src="facebook.png"></a>
-        <a href="https://www.instagram.com/adidasfootball?igshid=tt6lnjagiq93" target="_blank"><img
-                src="instagram.png"></a>
-        <a href="https://www.youtube.com/c/adidas" target="_blank"><img src="youtube.png"></a>
-    </div>
-    <p class="copy">Copyright © 2021 | <i class="karim"><a href="https://www.facebook.com/karimhelal.kh">KARIM HELAL</a></i> . All
-        rights reserved.</p>
-</div>
-</body>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#" class="logo" aria-label="Adidas Homepage">
+                    <img src="images/ad.png" alt="Adidas Logo">
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#collections" class="nav-link" role="menuitem">Collections</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-label="Adidas NEMEZIZ 19.1 Showcase">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="content-container">
+                    <div class="hero-text">
+                        <h1 class="brand-title">
+                            <span class="brand-name">Adidas</span>
+                            <span class="product-line">NEMEZIZ</span>
+                            <span class="product-version">19.1</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Flexible Adidas cleats designed for agile play on firm ground. 
+                            Experience unmatched performance and comfort on the field.
+                        </p>
+                        
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fas fa-bolt" aria-hidden="true"></i>
+                                <span>Lightning Speed</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                <span>Superior Grip</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-leaf" aria-hidden="true"></i>
+                                <span>Eco-Friendly</span>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                                Buy Now
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                                Watch Video
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="product-showcase">
+                            <img src="images/product.png" alt="Adidas NEMEZIZ 19.1 Football Cleat" class="hero-product">
+                            <div class="floating-elements">
+                                <div class="float-element element-1"></div>
+                                <div class="float-element element-2"></div>
+                                <div class="float-element element-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-label="About NEMEZIZ 19.1">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Engineered for Excellence</h2>
+                    <p class="section-subtitle">Discover what makes NEMEZIZ 19.1 the choice of champions</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Agility Mesh</h3>
+                        <p>Revolutionary mesh upper adapts to your foot shape for unparalleled comfort and agility.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Torsion System</h3>
+                        <p>Advanced torsion system provides stability and support during quick direction changes.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Pro Performance</h3>
+                        <p>Trusted by professional athletes worldwide for its exceptional performance and durability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="collections" aria-label="Product Collections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Collections</h2>
+                    <p class="section-subtitle">Explore our range of high-performance football boots</p>
+                </div>
+                
+                <div class="collections-grid">
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <img src="images/prem.png" alt="NEMEZIZ Premium Collection">
+                            <div class="collection-overlay">
+                                <button class="btn-explore">Explore</button>
+                            </div>
+                        </div>
+                        <div class="collection-info">
+                            <h3>NEMEZIZ Premium</h3>
+                            <p>Professional grade design</p>
+                            <span class="price">$199.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <img src="images/sport.png" alt="NEMEZIZ Sport Collection">
+                            <div class="collection-overlay">
+                                <button class="btn-explore">Explore</button>
+                            </div>
+                        </div>
+                        <div class="collection-info">
+                            <h3>NEMEZIZ Sport</h3>
+                            <p>Performance oriented</p>
+                            <span class="price">$149.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <img src="images/train.png" alt="NEMEZIZ Training Collection">
+                            <div class="collection-overlay">
+                                <button class="btn-explore">Explore</button>
+                            </div>
+                        </div>
+                        <div class="collection-info">
+                            <h3>NEMEZIZ Training</h3>
+                            <p>Everyday performance</p>
+                            <span class="price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-label="Contact Information">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Have questions? We're here to help</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>support@adidas.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Herzogenaurach, Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/adidasfootball/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/adidasfootball" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/adidas" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/adidas" target="_blank" rel="noopener" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+                <p class="copyright">
+                    &copy; 2025 Adidas. All rights reserved. | 
+                    <a href="https://www.facebook.com/karimhelal.kh" target="_blank" rel="noopener" class="developer-link">
+                        Developed by Karim Helal
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.setAttribute('aria-expanded', false);
+                    mobileMenuToggle.classList.remove('active');
+                }
+            });
+        });
+
+        // Update active navigation link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form submission
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message (replace with actual form submission logic)
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    contactForm.reset();
+                }, 2000);
+            }, 1000);
+        });
+
+        // Floating animation for hero elements
+        const floatingElements = document.querySelectorAll('.float-element');
+        floatingElements.forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.5}s`;
+        });
+
+        // Add click effect to CTA buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+                
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 300);
+            });
+        });
+    </script>
+</body>
 </html>
